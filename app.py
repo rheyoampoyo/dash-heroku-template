@@ -119,6 +119,7 @@ gss_columns = gss_clean[['satjob', 'relationship','male_breadwinner','men_better
 group = ['sex', 'region', 'education']
 
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
+server = app.server
 
 app.layout = html.Div([
     html.H1("Exploring the Gender-Prestige Pay Gap through the General Social Survey"),
